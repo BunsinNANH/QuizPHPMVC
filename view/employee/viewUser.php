@@ -4,6 +4,7 @@
         <tr class="text-center mt-4">
             <th>ID</th>
             <th>Usename</th>
+            <th>Name</th>
             <th>Password</th>
             <th>Action</th>
         </tr>
