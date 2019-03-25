@@ -140,5 +140,18 @@
         }
     }
 
-   
+    function m_get_user(){
+        $query = " select * from users";
+        include 'connection.php';
+        $result = mysqli_query($conn , $query);
+
+        $rows = [];
+
+        if($result && mysqli_num_rows($result) > 0){
+            while ($get_result_to_array = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $rows[] = $get_result_to_array;
+            }
+        }
+        return $rows;
+    }
 ?>
